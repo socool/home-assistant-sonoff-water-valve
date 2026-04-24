@@ -1,6 +1,6 @@
 {
   "name": "SONOFF Water Valve",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "slug": "sonoff_water_valve",
   "description": "Trigger a SONOFF water valve on a time-based schedule through Home Assistant",
   "url": "https://github.com/socool/home-assistant-sonoff-water-valve/tree/main/sonoff-water-valve",
