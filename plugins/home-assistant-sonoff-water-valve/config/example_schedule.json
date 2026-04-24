@@ -1,0 +1,21 @@
+{
+  "automation_id_prefix": "garden_valve",
+  "alias_prefix": "Garden Valve",
+  "entity_id": "switch.sonoff_water_valve",
+  "timezone": "Asia/Bangkok",
+  "schedules": [
+    {
+      "name": "morning",
+      "time": "06:00",
+      "duration_minutes": 10,
+      "weekdays": ["mon", "wed", "fri"],
+      "enabled": true
+    },
+    {
+      "name": "evening",
+      "time": "18:00",
+      "duration_minutes": 8,
+      "enabled": true
+    }
+  ]
+}

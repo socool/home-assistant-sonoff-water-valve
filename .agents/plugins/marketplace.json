@@ -1,0 +1,20 @@
+{
+  "name": "local-home-automation",
+  "interface": {
+    "displayName": "Local Home Automation"
+  },
+  "plugins": [
+    {
+      "name": "home-assistant-sonoff-water-valve",
+      "source": {
+        "source": "local",
+        "path": "./plugins/home-assistant-sonoff-water-valve"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Utilities"
+    }
+  ]
+}
