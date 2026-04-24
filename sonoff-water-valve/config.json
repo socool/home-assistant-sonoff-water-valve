@@ -1,0 +1,45 @@
+{
+  "name": "SONOFF Water Valve",
+  "version": "0.1.0",
+  "slug": "sonoff_water_valve",
+  "description": "Trigger a SONOFF water valve on a time-based schedule through Home Assistant",
+  "url": "https://github.com/socool/home-assistant-sonoff-water-valve/tree/main/sonoff-water-valve",
+  "startup": "application",
+  "boot": "auto",
+  "init": false,
+  "arch": ["aarch64", "amd64", "armv7", "armhf", "i386"],
+  "map": [
+    {
+      "type": "homeassistant_config",
+      "read_only": false,
+      "path": "/config"
+    },
+    {
+      "type": "addon_config",
+      "read_only": false,
+      "path": "/addon_config"
+    }
+  ],
+  "options": {
+    "ha_url": "http://homeassistant.local:8123",
+    "ha_token": "",
+    "entity_id": "switch.sonoff_water_valve",
+    "schedule_file": "/config/sonoff-water-valve/schedule.json",
+    "timezone": "Asia/Bangkok",
+    "request_timeout_seconds": 30,
+    "poll_interval_seconds": 20,
+    "log_level": "info",
+    "dry_run": false
+  },
+  "schema": {
+    "ha_url": "str",
+    "ha_token": "password",
+    "entity_id": "str",
+    "schedule_file": "str",
+    "timezone": "str",
+    "request_timeout_seconds": "int",
+    "poll_interval_seconds": "int",
+    "log_level": "list(trace|debug|info|warning|error)?",
+    "dry_run": "bool?"
+  }
+}
